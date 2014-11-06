@@ -7,9 +7,9 @@ Amazon E2C = m3.2xlarge
 
 Linux desc 3.2.0-4-amd64 #1 SMP Debian 3.2.51-1 x86_64 GNU/Linux
 
-time perl Crawler-Create-reports.pl < 1000.txt
+$time perl Crawler-Create-reports.pl < 10000-alexaTop.txt 
 
-real	0m52.360s
-user	1m35.691s
-sys	0m30.549s
+real	4m54.229s
+user	14m58.687s
+sys	9m53.432s
 
