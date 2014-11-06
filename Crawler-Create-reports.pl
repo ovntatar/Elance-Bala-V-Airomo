@@ -3,7 +3,6 @@
 use strict;
 use warnings;
 
-use List::MoreUtils qw{ natatime };
 use LWP::UserAgent;
 
 use AnyEvent;
@@ -46,7 +45,6 @@ my $ping_data = fork_ping();
 $cv->recv;
 while (my ($key, $value) = each (%$ping_data))
 {
-print $fh "Host = $key >> HTTP CODE >> $value\n";
+	print $fh "Host = $key >> HTTP CODE >> $value\n";
 }
 close $fh;
-#p $ping_data;
